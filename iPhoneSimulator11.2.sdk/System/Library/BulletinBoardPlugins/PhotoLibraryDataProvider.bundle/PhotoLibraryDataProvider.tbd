@@ -1,0 +1,14 @@
+---
+archs:                 [ i386, x86_64 ]
+platform:              ios
+install-name:          /System/Library/BulletinBoardPlugins/PhotoLibraryDataProvider.bundle/PhotoLibraryDataProvider
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ i386, x86_64 ]
+    objc-classes:       [ _PLBulletinBoardDataProvider, _PLBulletinBoardPersistentTimer ]
+    objc-ivars:         [ _PLBulletinBoardDataProvider._bulletinThumbnailData, _PLBulletinBoardDataProvider._bulletins,
+                          _PLBulletinBoardDataProvider._lastDisplayedRecordID, _PLBulletinBoardDataProvider._persistentTimer,
+                          _PLBulletinBoardDataProvider._serialQueue, _PLBulletinBoardPersistentTimer._persistentTimer,
+                          _PLBulletinBoardPersistentTimer._postingServiceDelegate, _PLBulletinBoardPersistentTimer._serialQueue ]
+...

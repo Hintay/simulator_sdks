@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ i386, x86_64 ]
+uuids:           [ 'i386: 19B6A99E-054C-37A1-8CFE-8828993B12D8', 'x86_64: 0BDB7448-5167-390A-9BC0-8A639FE618B9' ]
+platform:        ios
+install-name:    /usr/lib/libassertion_launchd.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ _assertion_set_process_state ]
+...

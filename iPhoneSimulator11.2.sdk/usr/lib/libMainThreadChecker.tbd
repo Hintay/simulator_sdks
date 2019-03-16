@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ i386, x86_64 ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 20F4ACB9-67E9-3281-978D-FC452666C91B' ]
+platform:        ios
+install-name:    /usr/lib/libMainThreadChecker.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ ___main_thread_add_check_for_selector, ___main_thread_checker_on_report, 
+                       ___main_thread_set_report_callback ]
+...

@@ -1,0 +1,54 @@
+---
+archs:                 [ i386, x86_64 ]
+platform:              ios
+install-name:          '@rpath/DebugHierarchyFoundation.framework/DebugHierarchyFoundation'
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ i386, x86_64 ]
+    symbols:            [ _DBGBoolString, _DBGCGFloatString, _DBGDecodeDictionaryFromJSONCompatibleDictionary,
+                          _DBGDecodeValueFromJSONCompatibleValue, _DBGDeserializePropertyDictionariesFromJSON,
+                          _DBGDeserializePropertyDictionaryFromJSON, _DBGDoubleString,
+                          _DBGEncodeDictionaryAsJSONCompatibleDictionary, _DBGEncodeValueAsJSONCompatibleValue, _DBGFloatString,
+                          _DBGIntString, _DBGIntegerString, _DBGLongString, _DBGSerializePropertyDescriptionAsJSON,
+                          _DBGSerializePropertyDescriptionsAsJSON, _DBGSpecifiersFromFormatString, _DBGUnsignedIntString,
+                          _DBGUnsignedIntegerString, _DBGUnsignedLongString, _DebugHierarchyFoundationVersionNumber,
+                          _DebugHierarchyFoundationVersionString, _DebugHierarchyJSONDecodingErrorDomain,
+                          _DebugHierarchyJSONEncodingErrorDomain, _DebugHierarchyLogMessageKey, _DebugHierarchyLogMethodKey,
+                          _DebugHierarchyLogSeverityKey, _DebugHierarchyLogTimestampKey, _DebugHierarchyLogTitleKey,
+                          _DebugHierarchyNumberStringEncodingErrorDomain, _DebugHierarchyRequestClassInformationKey,
+                          _DebugHierarchyRequestKey, _DebugHierarchyRequestLogsKey,
+                          _DebugHierarchyRequestMetaDataEnumDescriptionsKey, _DebugHierarchyRequestMetaDataKey,
+                          _DebugHierarchyRequestMetaDataOptionsDescriptionsKey,
+                          _DebugHierarchyRequestMetaDataRequestPerformanceCollectTypeInfoKey,
+                          _DebugHierarchyRequestMetaDataRequestPerformanceKey,
+                          _DebugHierarchyRequestMetaDataRequestPerformanceObjectProcessingKey,
+                          _DebugHierarchyRequestPayloadPropertiesKey, _DebugHierarchyRequestTopLevelGroupsKey,
+                          _DebugHierarchyRequestTopLevelPropertyDescriptionsKey, _DebugHierarchyVisibilityForObject,
+                          __DBGStructureOfDictionaryDescriptionWithFormat ]
+    objc-classes:       [ _DBGHierarchyRequest, _DBGHierarchyRequestStore, _DBGRuntimeClassDescription, _DBGRuntimeClasses,
+                          _DBGTargetHub, _DebugHierarchyLogEntry, _DebugHierarchyRequestPredicate ]
+    objc-ivars:         [ _DBGHierarchyRequest._completion, _DBGHierarchyRequest._executionEndDate,
+                          _DBGHierarchyRequest._executionStartDate, _DBGHierarchyRequest._identifier, _DBGHierarchyRequest._logs,
+                          _DBGHierarchyRequest._name, _DBGHierarchyRequest._payload, _DBGHierarchyRequest._predicate,
+                          _DBGHierarchyRequest._priority, _DBGHierarchyRequest._progressHandler,
+                          _DBGHierarchyRequest._spinTargetRunloopAfterRequest, _DBGHierarchyRequest._status,
+                          _DBGHierarchyRequest._statusMessageActivityPhrase, _DBGHierarchyRequest._timeout,
+                          _DBGHierarchyRequest._type, _DBGHierarchyRequest._wantsUserFacingStatusUpdates,
+                          _DBGHierarchyRequestStore._enumerationQueue,
+                          _DBGHierarchyRequestStore._identifierToObjectDescriptionMap, _DBGHierarchyRequestStore._metaData,
+                          _DBGHierarchyRequestStore._request, _DBGHierarchyRequestStore._runtimeClasses,
+                          _DBGHierarchyRequestStore._topLevelGroups, _DBGHierarchyRequestStore._topLevelPropertyDescriptions,
+                          _DBGRuntimeClassDescription._moduleName, _DBGRuntimeClassDescription._parentClass,
+                          _DBGRuntimeClassDescription._runtimeClassName, _DBGRuntimeClassDescription._subclasses,
+                          _DBGRuntimeClasses._classMap, _DBGTargetHub._identifierToCrawledDebugHierarchyObjectMap,
+                          _DebugHierarchyLogEntry._message, _DebugHierarchyLogEntry._methodSignature,
+                          _DebugHierarchyLogEntry._severity, _DebugHierarchyLogEntry._timestamp, _DebugHierarchyLogEntry._title,
+                          _DebugHierarchyRequestPredicate._groupingIdentifiers,
+                          _DebugHierarchyRequestPredicate._includeLazyPropertyValues,
+                          _DebugHierarchyRequestPredicate._metaDataProviderClassesForEnums,
+                          _DebugHierarchyRequestPredicate._metaDataProviderClassesForOptions,
+                          _DebugHierarchyRequestPredicate._objectIdentifiers,
+                          _DebugHierarchyRequestPredicate._propertyDescriptions,
+                          _DebugHierarchyRequestPredicate._strictestVisibility ]
+...

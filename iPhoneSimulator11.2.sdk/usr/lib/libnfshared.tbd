@@ -1,0 +1,30 @@
+--- !tapi-tbd-v2
+archs:           [ i386, x86_64 ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 280C42C5-DC6F-32B5-BBDF-1059692120E8' ]
+platform:        ios
+install-name:    /usr/lib/libnfshared.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ _NFCreateRootQueue, _NFDataAppend, _NFDataAppendBytes, _NFDataAsHexString, 
+                       _NFDataCreateWithBytes, _NFDataCreateWithBytesNoCopy, _NFDataCreateWithFile, 
+                       _NFDataCreateWithHexString, _NFDataCreateWithLength, _NFDataPrintAsHexString, 
+                       _NFDataRelease, _NFDataRetain, _NFDataScannerCreateWithData, 
+                       _NFDataScannerEOF, _NFDataScannerRead, _NFDataScannerRead16, 
+                       _NFDataScannerRead32, _NFDataScannerRead8, _NFDataScannerReadData, 
+                       _NFDataScannerRelease, _NFDataScannerRetain, _NFGetRootQueue, 
+                       _NFGetThreadPriority, _NFSetRootQueue, _NFSetThreadPriority, 
+                       _NFSharedDumpTransport, _NFSharedLogLock, _NFSharedLogSetDiagnosticLogging, 
+                       _NFSharedLogSetSynchronousLogging, _NFSharedLogTransport, 
+                       _NFSharedLogUnlock, _NFSharedLogv, _NFSharedLogv_GreenTea, 
+                       _NFSimulateCrash, _TLVCreateWithData, _TLVCreateWithDataMixed, 
+                       _TLVCreateWithFirstChild, _TLVCreateWithValue, _TLVRelease, 
+                       _TLVRetain, __NFLogTimerStart, __NFLogTimerStop, __NFSharedLogClose, 
+                       __NFSharedLogOpen, ___NFSharedLogv, _gRootQueueMutex, _postAWDHardwareExceptionEvent, 
+                       _postAWDMiddlewareExceptionEvent, _resetAWDLoadStackExceptionCount ]
+    objc-classes:    [ _NFAWDLogger, _NFCurrency, _NFJSONEncoder, _NFMemoryObserver, 
+                       _NFNdefMessageInternal, _NFNdefRecordInternal, _NFPowerAssertion, 
+                       _NFPowerObserver, _NFPreferenceObserver, _NFPropertyCoder, 
+                       _NFReaderSessionCallbacks, _NFReaderSessionInterface, _NFTLV, 
+                       _NFTagInternal, _NFTimer, _NFWeakReference ]
+...
